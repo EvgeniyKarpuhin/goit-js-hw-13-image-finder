@@ -3,7 +3,7 @@ import refs from './refs';
 import templ from '../templ/templ.hbs';
 
 refs.searchForm.addEventListener('submit', imgSearch);
-refs.loadMore.addEventListener('click', loadMore);
+refs.loadMore.addEventListener('click', loadMoreBtn);
 
 function imgSearch(e) {
     e.preventDefault();
@@ -16,6 +16,14 @@ function imgSearch(e) {
     service.reset();
     service.search = input.value;
 
+    service.fetcArticles().then(u => {
+        const build = buildList(u);
+        listItem(build);
+    });
+    input.value = '';
+}
+
+    function loadMoreBtn() {
     service.fetcArticles().then(u => {
         const build = buildList(u);
         listItem(build);
