@@ -3,7 +3,7 @@ import refs from './refs';
 import templ from '../templ/templ.hbs';
 
 refs.searchForm.addEventListener('submit', imgSearch);
-refs.loadMore.addEventListener('click', loadMoreBtn);
+refs.loadMore.addEventListener('click', loadMore);
 
 function imgSearch(e) {
     e.preventDefault();
