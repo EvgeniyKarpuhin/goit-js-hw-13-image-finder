@@ -14,7 +14,7 @@ export default {
     get search() {
         return this.query;
     },
-    set search(str) {
+    set search(string) {
         this.query = string;
     },
     bigest() {
