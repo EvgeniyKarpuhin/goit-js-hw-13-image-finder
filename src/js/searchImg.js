@@ -1,6 +1,7 @@
 import service from './apiService';
-import refs from './refs';
 import templ from '../templ/templ.hbs';
+import refs from './refs';
+
 
 refs.searchForm.addEventListener('submit', imgSearch);
 refs.loadMore.addEventListener('click', loadMoreBtn);
