@@ -1,7 +1,7 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"clu1":[function(require,module,exports) {
 
 },{}],"eQwa":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;const e="https://pixabay.com/api/";var t={page:1,query:"",async fetcArticles(t){const a=`?image_type=photo&orientation=horizontal&q=${this.query}&page=${this.page}&per_page=12&key=23515098-6ca4d9d130a27025c1d21d34d`,s=await fetch(e+a),r=await s.json();return this.bigest(),r.u},get search(){return this.query},set search(e){this.query=e},bigest(){this.page+=1},reset(){this.page=1}};exports.default=t;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;const e="https://pixabay.com/api/",t="?image_type=photo&orientation=horizontal&q=";var s={page:1,query:"",async fetcArticles(e){this.query,this.page;const t=await sum.json();return this.bigest(),t.u},get search(){return this.query},set search(e){this.query=e},bigest(){this.page+=1},reset(){this.page=1}};exports.default=s;
 },{}],"pAws":[function(require,module,exports) {
 var define;
 var global = arguments[3];
@@ -15,4 +15,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"./apiService":"eQwa","../templ/templ.hbs":"usTc","./refs":"VyiV"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/searchImg");
 },{"./sass/main.scss":"clu1","./js/searchImg":"XmZH"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-13-image-finder/src.3d6a35a2.js.map
+//# sourceMappingURL=/goit-js-hw-13-image-finder/src.8d3cea51.js.map
