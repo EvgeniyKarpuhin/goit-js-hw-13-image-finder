@@ -12,7 +12,7 @@ function imgSearch(e) {
     const form = e.currentTarget;
     const input = form.elements.query;
 
-    // clearList();
+    clearList();
 
     service.reset();
     service.search = input.value;
