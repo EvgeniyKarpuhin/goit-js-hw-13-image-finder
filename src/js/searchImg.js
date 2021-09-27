@@ -17,16 +17,16 @@ function imgSearch(e) {
     service.reset();
     service.search = input.value;
 
-    service.fetcArticles().then(u => {
-        const build = buildList(u);
+    service.fetcArticles().then(hits => {
+        const build = buildList(hits);
         listItem(build);
     });
     input.value = '';
 }
 
     function loadMoreBtn() {
-    service.fetcArticles().then(u => {
-        const build = buildList(u);
+    service.fetcArticles().then(hits => {
+        const build = buildList(hits);
         listItem(build);
         window.scrollTo(0, 1000);
 
