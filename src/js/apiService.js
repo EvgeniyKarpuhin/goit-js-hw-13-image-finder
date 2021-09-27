@@ -18,6 +18,7 @@ export default {
         })
         .then(data => {
             this.page += 1;
+            console.log(data);
             return data;
         })
         .catch(err => Notiflix.Notify.failure(`${err}`));
