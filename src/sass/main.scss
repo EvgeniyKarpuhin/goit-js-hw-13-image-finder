@@ -52,13 +52,16 @@ html {
   .stats {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(194, 188, 188);
+    background-color: darkgray;
+    height: 100px;
+    align-items: center;
   }
   
   .stats-item {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: teal;
+    display: flex;
   }
 
   .btn-load {
